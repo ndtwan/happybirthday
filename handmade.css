@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+/* Same gift and controls, on a few imperfect sheets of notebook paper. */
+:root{--night:#f7f0dc;--paper:#fff9e9;--ink:#425342;--muted:#6e775e;--gold:#8d713b;--line:#8f9d7540;--green:#7f916b;--dark:#425342;--hand:'Caveat','Segoe Print','Comic Sans MS',cursive}
+body{color-scheme:light;background-color:#f7f0dc;background-image:repeating-linear-gradient(0deg,transparent 0 33px,#9cafb113 33px 34px);transition:none}
+.grain{opacity:.12;mix-blend-mode:multiply}
+.topbar{border-bottom:1px dashed #8f9d7536}
+.wordmark{font-family:var(--hand);font-size:37px;transform:rotate(-4deg)}
+.wordmark span{color:#a18a49;transform:rotate(10deg)}
+.top-tools select{color:var(--ink);border-bottom:1px dashed #899479}
+.top-tools option{background:var(--paper);color:var(--ink)}
+.icon-button{border-color:#82906d;border-radius:47% 53% 45% 55%;background:#ece5cd;transform:rotate(6deg);color:var(--ink)}
+.icon-button[aria-pressed=true]{background:#e3d39c}
+.sound-off{color:#7b866d}
+button:focus-visible,select:focus-visible{outline-color:#7c8e60;outline-style:dashed}
+h1,.scene-copy h1,.final-copy h1{font-family:var(--hand);font-weight:600;font-size:clamp(54px,5.6vw,76px);line-height:1.04;letter-spacing:0;transform:rotate(-1.5deg)}
+.intro-scene h1{font-family:var(--hand);font-size:clamp(65px,7.5vw,100px);font-weight:600;line-height:.98;letter-spacing:0;transform:rotate(-2deg);margin-bottom:24px}
+.eyebrow{color:#778060;font-size:9px;letter-spacing:1.3px}
+.scene-sub{color:#6e775e;line-height:2}
+.intro-scene .scene-sub{transform:rotate(.7deg)}
+.intro-hint,.object-hint{font-family:var(--hand);font-size:18px;letter-spacing:0;color:#778060}
+.intro-hint{transform:rotate(2deg);margin-top:31px}
+.intro-date{font-family:var(--hand);color:#9b966a88;transform:rotate(8deg);letter-spacing:1px}
+.intro-date i{border-top:1px dashed #9d9b70}
+.intro-orbit{border-color:#88936b2b;border-style:dashed;transform:rotate(-23deg) scaleY(.97)}
+.intro-orbit:after{color:#8c9669;opacity:.6}
+.primary{background:#e7d49a;border:1.5px solid #6b7957;color:#425342;box-shadow:2px 3px 0 #6c77572b;border-radius:43px 37px 44px 35px / 36px 44px 34px 40px;transform:rotate(-1deg);font-size:12px}
+.primary:hover{background:#efdfa9;transform:rotate(1deg) translateY(-1px)}
+.text-button{color:#6e775e;border-bottom:1px dashed #8f9974}
+.text-button:hover{color:#445c3e}
+.seed-packet{background:#d8bc87;color:#586145;box-shadow:4px 7px 0 #7e79551b;border:1px solid #ac9668;border-radius:3px 5px 8px 4px;transform:rotate(-9deg)}
+.seed-packet:hover{box-shadow:5px 9px 0 #7e795522;transform:rotate(-5deg) translateY(-5px)}
+.seed-packet:after{border-style:dashed;border-color:#6a715a55;border-radius:4px 7px 3px 6px}
+.packet-fold{background:#e8cfa0;box-shadow:none;clip-path:polygon(0 0,100% 0,89% 87%,16% 100%)}
+.packet-name{font-family:var(--hand);font-size:30px;font-style:normal;line-height:.9;transform:rotate(-3deg)}
+.packet-top{font-family:var(--hand);font-size:13px;letter-spacing:1px;transform:rotate(4deg);margin-top:14px}
+.packet-bottom{letter-spacing:.5px}
+.cake-platform{rotate:-3deg}
+.cake-shadow{background:none;border:1px dashed #9b9b7033;height:35px;top:auto;bottom:15px;left:6px;width:310px}
+.cake-body{background:#d2b384;border:1px solid #9a845a;box-shadow:inset 0 -5px #b39b721f;border-radius:48% 52% 17% 14% / 17% 20% 15% 12%}
+.cake-body>span{font-family:var(--hand);font-size:23px;letter-spacing:2px;color:#826f4d}
+.cake-icing{background:#f2e2bd;border:1px solid #b8a77f;box-shadow:none;rotate:1deg}
+.cake-plate{background:#dce0c4;border-bottom-color:#a5b08b;box-shadow:none}
+.candle-halo{display:none}
+.unfold-note{background:repeating-linear-gradient(#fff9e9 0 27px,#b8c6ba36 27px 28px);border:1px solid #d5cfb2;box-shadow:3px 5px 0 #807b4f12;position:relative;border-radius:1px 5px 3px 2px;padding-top:28px}
+.unfold-note:before{content:'';position:absolute;top:-11px;left:31%;height:22px;width:83px;background:#d8cc99b3;transform:rotate(-5deg);border-left:1px dashed #b3a67b;border-right:1px dashed #b3a67b}
+.unfold-note p{color:#536047;line-height:1.95}
+.note-star{color:#a28b50;transform:rotate(10deg);width:max-content}
+.flower-art{filter:none}
+.flower-art svg{filter:url(#pencil-edge)}
+.petal path:first-child{stroke:#9b814a;stroke-width:1.1;stroke-linejoin:round}
+.flower-center{fill:#a28a58;stroke:#7f704a;stroke-width:1.5}
+.stem{stroke:#7f916b;stroke-width:5}
+.leaf-left{fill:#8f9f73;stroke:#6f845f;stroke-width:1}
+.leaf-right{fill:#a3ae7c;stroke:#7e8c61;stroke-width:1}
+.ground-glow{fill:#7f916b;opacity:.08}
+.stack-sheet{box-shadow:2px 4px 0 #7c735f13;border-color:#d8cfb1;background:#e5d9ba}
+.sheet-two{background:#e9dfc8}
+.photo-stack:after{content:'';position:absolute;left:35%;top:-13px;width:86px;height:25px;background:#d3c994b3;border-left:1px dashed #aaa16f;border-right:1px dashed #aaa16f;transform:rotate(6deg);pointer-events:none;z-index:2}
+.memory-card{box-shadow:3px 6px 0 #8778551f;border:1px solid #d6c9a6;background:#fff9e9;border-radius:3px 1px 4px 2px}
+.memory-card img{background:#e9e1cc}
+.photo-caption{font-family:var(--hand);font-size:19px;line-height:1.1;padding-top:12px}
+.photo-back{font-family:var(--hand);font-size:25px;line-height:1.35;background:repeating-linear-gradient(transparent 0 28px,#9cafa633 28px 29px);color:#526246}
+.back-number{font-family:var(--hand);font-style:normal;transform:rotate(7deg);color:#a28b4f}
+.photo-back small{color:#7c8668}
+.round-button{border:1px solid #879273;border-radius:45% 54% 48% 52%;background:#eeead6;color:#556447;box-shadow:1px 2px 0 #737c5720}
+.round-button:hover{background:#e3dfc8}
+.photo-count{color:#59694e}
+.photo-count>span{color:#8c9277}
+.collect-dots i{border-color:#9aa580}
+.collect-dots .filled{background:#9caa7a;border-color:#819364}
+.water-choice{background:#faf5e7;border:1px solid #abb590;border-radius:12px 17px 13px 16px;box-shadow:2px 2px 0 #7c895019;color:#526246}
+.water-choice:nth-child(2){transform:rotate(.6deg)}
+.water-choice:nth-child(3){transform:rotate(-.5deg)}
+.water-choice svg{color:#819c92}
+.water-choice small{color:#7f916b}
+.water-choice:hover{background:#f2edd9}
+.water-choice.selected{background:#e5e8cf;border-color:#8a9c6c}
+.water-choice.selected svg{color:#7c9066}
+.health-note{color:#60704e;font-family:var(--hand);font-size:22px;line-height:1.3}
+.water-rings{border-color:#91a07c55;border-style:dashed}
+.pack-choice{background:#faf5e7;border-color:#a8b18e;border-radius:13px 18px 12px 17px;color:#526246;box-shadow:2px 3px 0 #7c895015}
+.pack-choice svg{color:#7c9066}
+.pack-choice>small{color:#889173}
+.pack-choice.selected{border-color:#8a9c6c;background:#e5e8cf;transform:translateY(-3px) rotate(-2deg)}
+.pack-choice.selected svg{color:#6f875a}
+.case-handle{border-color:#927e58}
+.case-lid{background:#c6b28b;border-color:#a28d62;box-shadow:none;border-radius:25px 18px 8px 10px}
+.case-lid>span:first-child{font-family:var(--hand);font-size:22px;letter-spacing:1px}
+.case-stamp{background:#e1dfb7;border-color:#8d966b;font-family:var(--hand);font-size:30px;color:#78825b}
+.case-inside{background:repeating-linear-gradient(45deg,#e1dbc1 0 5px,#d6d0b6 5px 6px);border-color:#ac986e}
+.packed-item{color:#6b7d54}
+.case-front{background:#c2ad81;border-color:#a9956b;box-shadow:3px 6px 0 #81744e16;border-radius:3px 5px 18px 15px}
+.case-front>span{font-family:var(--hand);font-size:13px;letter-spacing:1px;color:#7d704f}
+.case-front i{background:#ac9566;border-color:#e2cd9a}
+.travel-ticket{background:#f3e8c8;border:1px dashed #a5a279;box-shadow:2px 4px 0 #82764c15;border-radius:4px 7px 3px 5px}
+.travel-ticket strong{color:#6d7a4f}
+.ticket-route{color:#586448}
+.travel-ticket p{font-family:var(--hand);font-size:17px;color:#7b8465}
+.final-copy .eyebrow{transform:rotate(1deg)}
+.petal-link{color:#665533}
+.flower-spark{color:#f4dfad;font-family:var(--hand)}
+.final-note{font-family:var(--hand);font-style:normal;color:#63734f;font-size:24px;line-height:1.3;transform:rotate(-1deg)}
+.petal-hint{font-family:var(--hand);font-size:16px;color:#8c9275}
+.return-flower{color:#7c8a61}
+#progress:before{background:none;border-top:1px dashed #9da883}
+.step{color:#8c9678}
+.step-dot{background:#f3ecd7;border-color:#9fa987;border-radius:47% 53% 49% 51%;color:#6c7b57}
+.step.active{color:#667c4f}
+.step.active .step-dot{border-color:#7c8e60;background:#e2e5c9;box-shadow:0 0 0 3px #8a9b6410}
+.step.done .step-dot{background:#e9e1bc;color:#8b7a45;border-color:#b5ab7b}
+.step:not(:disabled):hover{color:#536b40}
+.planting-overlay{background:#f7f0dc}
+@media(max-width:1050px){.scene-copy h1{font-size:59px}.final-copy h1{font-size:62px}}
+@media(max-width:700px){.intro-scene h1{font-size:clamp(57px,12vw,78px)}.scene-copy h1{font-size:50px;line-height:1.04}.final-copy h1{font-size:54px}.eyebrow{font-size:8px}.intro-scene .eyebrow{font-size:7px}.intro-hint,.object-hint{font-size:16px}.packet-name{font-size:28px}.packet-top{font-size:12px}.photo-caption{font-size:17px}.photo-back{font-size:23px}.health-note{font-size:20px;line-height:1.25}.water-choice{background:#faf5e7}.water-choice.selected{background:#e5e8cf}.final-note{font-size:22px}.petal-hint{font-size:14px}.primary{font-size:11px}.travel-ticket p{font-size:15px}.wordmark{font-size:33px}.intro-date{font-size:29px}}
+@media(max-width:360px){.scene-copy h1{font-size:44px}.final-copy h1{font-size:47px}.intro-scene h1{font-size:54px}}
+
